@@ -1,0 +1,56 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+/* ---- Pantalla de lista ---- */
+.resumen {
+  font-size: 16;
+  font-weight: bold;
+  padding: 12 16;
+  background-color: #e8eefc;
+  color: #1f3a8a;
+}
+
+.fila {
+  padding: 12 16;
+}
+
+.titulo {
+  font-size: 18;
+  font-weight: bold;
+}
+
+.descripcion {
+  font-size: 14;
+  color: #6b7280;
+}
+
+.estado {
+  font-size: 14;
+  font-weight: bold;
+  horizontal-align: right;
+}
+
+.fecha {
+  font-size: 13;
+  color: #6b7280;
+}
+
+.boton-agregar {
+  margin: 12 16;
+}
+
+/* ---- Pantalla de formulario ---- */
+.formulario {
+  padding: 16;
+}
+
+.etiqueta {
+  font-size: 14;
+  font-weight: bold;
+  margin-top: 12;
+}
+
+.error {
+  font-size: 13;
+  color: #b91c1c;
+}

@@ -1,0 +1,25 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ActionBar title="BecaGest" />
+
+    <GridLayout rows="auto, *, auto">
+        <Label row="0" text="{{ resumen }}" class="resumen" />
+
+        <ListView row="1" items="{{ items }}" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <GridLayout columns="*, auto" rows="auto, auto, auto" class="fila">
+                    <Label row="0" col="0" text="{{ titulo }}" class="titulo" textWrap="true" />
+                    <Label row="0" col="1" text="{{ estado }}" class="estado" />
+                    <Label row="1" col="0" colSpan="2" text="{{ descripcion }}" class="descripcion" textWrap="true" />
+                    <Label row="2" col="0" colSpan="2" class="fecha">
+                        <FormattedString>
+                            <Span text="Fecha límite: " />
+                            <Span text="{{ fechaLimite }}" />
+                        </FormattedString>
+                    </Label>
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+
+        <Button row="2" text="Nueva tarea" tap="onNuevaTarea" class="-primary boton-agregar" />
+    </GridLayout>
+</Page>

@@ -1,0 +1,24 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ActionBar title="Nueva tarea" />
+
+    <ScrollView>
+        <StackLayout class="formulario">
+
+            <Label text="Título" class="etiqueta" />
+            <TextField text="{{ titulo }}" hint="Ej. Revisar solicitudes" />
+            <Label text="{{ errorTitulo }}" visibility="{{ visTitulo }}" class="error" textWrap="true" />
+
+            <Label text="Descripción" class="etiqueta" />
+            <TextView text="{{ descripcion }}" hint="Describa la tarea (mínimo 10 caracteres)" height="100" />
+            <Label text="{{ errorDescripcion }}" visibility="{{ visDescripcion }}" class="error" textWrap="true" />
+
+            <Label text="Fecha límite" class="etiqueta" />
+            <TextField text="{{ fechaLimite }}" hint="dd/mm/aaaa" keyboardType="datetime" />
+            <Label text="{{ errorFechaLimite }}" visibility="{{ visFechaLimite }}" class="error" textWrap="true" />
+
+            <Button text="Guardar" tap="onGuardar" class="-primary" marginTop="24" />
+            <Button text="Cancelar" tap="onCancelar" class="-outline" />
+
+        </StackLayout>
+    </ScrollView>
+</Page>

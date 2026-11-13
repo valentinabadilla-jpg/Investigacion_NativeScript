@@ -1,0 +1,2 @@
+<!-- Frame = contenedor de navegación. defaultPage es la primera pantalla. -->
+<Frame defaultPage="lista/lista-page" />
