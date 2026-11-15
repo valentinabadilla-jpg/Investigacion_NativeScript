@@ -39,18 +39,57 @@
   margin: 12 16;
 }
 
-/* ---- Pantalla de formulario ---- */
+
+/* ==================================
+   FORMULARIO - INTEGRANTE 2
+   ================================== */
+
 .formulario {
-  padding: 16;
+  padding: 20;
+  background-color: #ffffff;
+}
+
+.formulario-titulo {
+  font-size: 22;
+  font-weight: bold;
+  color: #1f3a8a;
+  margin-bottom: 8;
+}
+
+.formulario-subtitulo {
+  font-size: 14;
+  color: #6b7280;
+  margin-bottom: 12;
+}
+
+.formulario-ayuda {
+  font-size: 12;
+  color: #6b7280;
+  margin-top: 8;
+  margin-bottom: 8;
 }
 
 .etiqueta {
-  font-size: 14;
+  font-size: 15;
   font-weight: bold;
-  margin-top: 12;
+  color: #374151;
+  margin-top: 14;
+  margin-bottom: 4;
+}
+
+.campo-formulario {
+  font-size: 15;
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  border-width: 1;
+  border-radius: 6;
+  padding: 10;
 }
 
 .error {
   font-size: 13;
   color: #b91c1c;
+  margin-top: 4;
+  margin-bottom: 6;
 }
+
