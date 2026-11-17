@@ -1,3 +1,4 @@
+
 import { Observable, ObservableArray } from '@nativescript/core'
 import { Tarea } from '../models/tarea'
 import { tareasService } from '../services/tareas-service'
@@ -15,6 +16,12 @@ export class ListaViewModel extends Observable {
   actualizarResumen() {
     const total = this.items.length
     const pendientes = tareasService.contarPendientes()
-    this.set('resumen', `Tareas: ${total}  |  Pendientes: ${pendientes}`)
+    const completadas = total - pendientes
+
+    this.set(
+      'resumen',
+      `Tareas: ${total}  |  Pendientes: ${pendientes}  |  Completadas: ${completadas}`
+    )
   }
 }
+

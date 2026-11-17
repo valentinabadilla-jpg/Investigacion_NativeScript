@@ -8,5 +8,10 @@ export interface Tarea {
   estado: EstadoTarea
 }
 
-// Datos que llena el formulario (el id y el estado los asigna el servicio).
-export type NuevaTarea = Omit<Tarea, 'id' | 'estado'>
+// Datos que llena el formulario (el id y el estado los asignA el servicio).
+export type NuevaTarea = Omit<Tarea, 'id' | 'estado'>      
+
+
+
+
+
